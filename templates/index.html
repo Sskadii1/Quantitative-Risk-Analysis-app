@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Risk Input</title>
+</head>
+<body>
+    <h1>Input Asset Risk Data</h1>
+    <form method="POST" action="/input">
+        <label for="asset">Asset:</label><br>
+        <input type="text" id="asset" name="asset" required><br><br>
+
+        <label for="risk">Risk:</label><br>
+        <input type="text" id="risk" name="risk" required><br><br>
+
+        <label for="asset_value">Asset Value:</label><br>
+        <input type="number" id="asset_value" name="asset_value" step="0.01" required><br><br>
+
+        <label for="ef">EF:</label><br>
+        <input type="number" id="ef" name="ef" step="0.01" required><br><br>
+
+        <label for="sle">SLE:</label><br>
+        <input type="number" id="sle" name="sle" step="0.01" required><br><br>
+
+        <label for="aro">ARO:</label><br>
+        <input type="number" id="aro" name="aro" step="0.01" required><br><br>
+
+        <label for="loss_value">Loss Value:</label><br>
+        <input type="number" id="loss_value" name="loss_value" step="0.01" required><br><br>
+
+        <label for="safeguard">Safeguard:</label><br>
+        <input type="text" id="safeguard" name="safeguard" required><br><br>
+
+        <label for="safeguard_cost">Safeguard Cost:</label><br>
+        <input type="number" id="safeguard_cost" name="safeguard_cost" step="0.01" required><br><br>
+
+        <label for="ef_after_safeguard">EF After Safeguard:</label><br>
+        <input type="number" id="ef_after_safeguard" name="ef_after_safeguard" step="0.01" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
