@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Risk Data</title>
+</head>
+<body>
+    <h1>Asset Risk Data</h1>
+    <table border="1">
+        <tr>
+            <th>Asset</th>
+            <th>Risk</th>
+            <th>Asset Value</th>
+            <th>EF</th>
+            <th>SLE</th>
+            <th>ARO</th>
+            <th>Loss Value</th>
+            <th>Safeguard</th>
+            <th>Safeguard Cost</th>
+            <th>EF After Safeguard</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row['asset'] }}</td>
+            <td>{{ row['risk'] }}</td>
+            <td>{{ row['asset_value'] }}</td>
+            <td>{{ row['ef'] }}</td>
+            <td>{{ row['sle'] }}</td>
+            <td>{{ row['aro'] }}</td>
+            <td>{{ row['loss_value'] }}</td>
+            <td>{{ row['safeguard'] }}</td>
+            <td>{{ row['safeguard_cost'] }}</td>
+            <td>{{ row['ef_after_safeguard'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
